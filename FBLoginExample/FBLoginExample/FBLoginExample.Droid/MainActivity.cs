@@ -15,7 +15,6 @@ using Android.Content;
 //You need to add this metadata to initialize FacebookActivity, you can add it on your strings.xml file
 [assembly: MetaData("com.facebook.sdk.ApplicationId", Value = "@string/app_id")]
 [assembly: MetaData("com.facebook.sdk.ApplicationName", Value = "@string/app_name")]
-
 namespace FBLoginExample.Droid
 {
     [Activity(Label = "FBLoginExample", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]

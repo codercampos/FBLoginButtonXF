@@ -28,8 +28,6 @@ namespace FBLoginExample.Renderers.Droid
                 return;
             loginButton = new LoginButton(Forms.Context);
             loginButton.LoginBehavior = LoginBehavior.NativeWithFallback;
-            //Create a new CallbackManager instance from CallbackManagerFactory
-            MainActivity.CallbackManager = CallbackManagerFactory.Create();
             //Implement FacebookCallback with LoginResult type to handle Callback's result
             var loginCallback = new FacebookCallback<LoginResult>
             {

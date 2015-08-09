@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 using FBLoginExample.Renderers;
-//using FBLoginExample.Dependencies;
+using FBLoginExample.Dependencies;
 
 namespace FBLoginExample.Pages
 {
@@ -15,7 +15,10 @@ namespace FBLoginExample.Pages
                 VerticalOptions = LayoutOptions.FillAndExpand,
                 Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0)
             };
-
+            FacebookButton fbButton = new FacebookButton();
+            fbButton.OnLogin += LoginWithFacebook;
+            layout.Children.Add(fbButton);
+            this.Content = layout;
         }
 
         private async void LoginWithFacebook(object sender, FacebookEventArgs e)
@@ -28,8 +31,8 @@ namespace FBLoginExample.Pages
             */
             //var success = await DependencyService.Get<IParse>().LoginWithFacebook(e.UserId, e.AccessToken, e.TokenExpiration);
 
-            bool success = (string.IsNullOrEmpty(e.UserId) && 
-                            string.IsNullOrEmpty(e.AccessToken) && 
+            bool success = (!string.IsNullOrEmpty(e.UserId) && 
+                            !string.IsNullOrEmpty(e.AccessToken) && 
                             e.TokenExpiration != null);
 
             if (success)
@@ -46,6 +49,7 @@ namespace FBLoginExample.Pages
                     "Ok"
                 );
             }
+            DependencyService.Get<ITools>().LogoutFromFacebook();
         }
     }
 }

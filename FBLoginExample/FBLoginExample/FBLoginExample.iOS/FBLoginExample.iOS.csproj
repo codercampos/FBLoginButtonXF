@@ -89,6 +89,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Dependencies\ParseService.cs" />
+    <Compile Include="Dependencies\ToolsService.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Renderers\FacebookButtonRenderer.cs" />
