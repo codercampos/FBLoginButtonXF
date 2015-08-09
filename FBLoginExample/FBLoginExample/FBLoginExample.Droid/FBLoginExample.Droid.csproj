@@ -96,6 +96,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dependencies\ParseService.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Renderers\FacebookButtonRenderer.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />

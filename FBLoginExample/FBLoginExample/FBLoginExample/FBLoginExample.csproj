@@ -36,6 +36,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="Dependencies\IParse.cs" />
+    <Compile Include="Pages\LoginPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Renderers\FacebookButton.cs" />
   </ItemGroup>

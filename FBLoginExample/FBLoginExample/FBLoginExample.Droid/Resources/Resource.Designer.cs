@@ -438,6 +438,12 @@ namespace FBLoginExample.Droid
 			// aapt resource value: 0x7f040000
 			public const int Hello = 2130968576;
 			
+			// aapt resource value: 0x7f040013
+			public const int app_id = 2130968595;
+			
+			// aapt resource value: 0x7f040014
+			public const int app_name = 2130968596;
+			
 			// aapt resource value: 0x7f040002
 			public const int com_facebook_image_download_unknown_error = 2130968578;
 			
