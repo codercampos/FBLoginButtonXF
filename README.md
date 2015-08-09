@@ -35,9 +35,10 @@ Test your app
 - On Android, the Text inside the button appears at the top of the button (no matter if you GravityVertical). This is maybe because We are not initializing ths button in the MainActivity (neither applying an style in this Acivity). I will test this later (but if you solve this before, please feel free to share it).
 
 ##Credits
-This is originally started by Nelson Chicas (@NelsonChicas) and finished by myself (@codercampos) with the help of the great Xamarin, Android & iOS community.
+This originally started by Nelson Chicas (@NelsonChicas) and finished by myself (@codercampos) with the help of the great Xamarin, Android & iOS community.
 
 - iOS implementation & Xamarin Forms CustomRenderer code: Nelson Chicas
 - Android implementation code: Carlos Campos
+- Repo, Comments & Guide: Carlos Campos
 
 Thank You so much for your time, hope this will be helpfull to you.
