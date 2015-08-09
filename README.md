@@ -37,8 +37,7 @@ Test your app
 ##Credits
 This is originally started by Nelson Chicas (@NelsonChicas) and finished by myself (@codercampos) with the help of the great Xamarin, Android & iOS community.
 
-iOS implementation & Xamarin Forms CustomRenderer code: Nelson Chicas
-Android implementation code: Carlos Campos
+- iOS implementation & Xamarin Forms CustomRenderer code: Nelson Chicas
+- Android implementation code: Carlos Campos
 
 Thank You so much for your time, hope this will be helpfull to you.
-
